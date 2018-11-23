@@ -1,0 +1,20 @@
+{
+  "name": "moleculer-docker-development",
+  "version": "1.0.0",
+  "description": "A simple way to get a moleculer development enviroment up.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "moleculer-runner --repl --hot services",
+    "start": "moleculer-runner"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "ioredis": "^3.2.2",
+    "moleculer": "^0.13.4",
+    "moleculer-web": "^0.8.4"
+  },
+  "devDependencies": {
+    "moleculer-repl": "^0.5.3"
+  }
+}
