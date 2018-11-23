@@ -61,9 +61,9 @@ services:
     image: postgres:10.5
     restart: always
     environment:
-      POSTGRES_USER: momentsforever
-      POSTGRES_PASSWORD: momentsforever
-      POSTGRES_DB: momentsforever
+      POSTGRES_USER: moleculer
+      POSTGRES_PASSWORD: moleculer
+      POSTGRES_DB: moleculer
       
     ports:
       - "5432:5432"
