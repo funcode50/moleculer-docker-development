@@ -2,7 +2,7 @@
 
 
 module.exports = {
-	name: "serviceone",
+	name: "serviceOne",
 
 	/**
 	 * Service settings
@@ -21,8 +21,8 @@ module.exports = {
 	 */
 	actions: {
 
-		async ask(ctx){
-            return await ctx.broker.call('servicetwo.respond')
+		async askServiceTwo(ctx){
+            return await ctx.broker.call('serviceTwo.respondToServiceOne')
         }
 	},
 

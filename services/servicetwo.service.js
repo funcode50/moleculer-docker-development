@@ -2,7 +2,7 @@
 
 
 module.exports = {
-	name: "servicetwo",
+	name: "serviceTwo",
 
 	/**
 	 * Service settings
@@ -21,8 +21,8 @@ module.exports = {
 	 */
 	actions: {
 
-		respond(ctx){
-            return 'This is a message from servicetwo.'
+		respondToServiceOne(ctx){
+            return "{message: 'This is a message from serviceTwo.'}"
         }
 	},
 

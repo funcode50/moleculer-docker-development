@@ -16,15 +16,15 @@ This repo is designed to short cut your ability to get up to speed by giving you
 * Clone this repo
 * npm install
 * docker-compose up
-* Visit http://localhost:3000/api/serviceone/ask to see one microservice talk to another.
-* Open up servicetwo.service.js and change the "ask" function to return something else. Save this file.
-* Revisit http://localhost:3000/api/serviceone/ask and see that your change has been hotreloaded. 
+* Visit http://localhost:3000/api/serviceOne/askServiceTwo to see one microservice talk to another.
+* Open up serviceTwo.service.js and change the "askServiceTwo" function to return something else. Save this file.
+* Revisit http://localhost:3000/api/serviceOne/askServiceTwo and see that your change has been hotreloaded. 
 
 # What is happening at a high level:
 * We've got an api gateway setup that calls our services.
-* By visiting http://localhost:3000/api/serviceone/ask, the api gateway is calling serviceone's function "ask."
-* serviceone in turn calls a function from servicetwo named "respond."
-* When serviceone recieves the response from servicetwo, the api gateway returns the response.
+* By visiting http://localhost:3000/api/serviceOne/askServiceTwo, the api gateway is calling serviceOne's function "askServiceTwo."
+* serviceOne in turn calls a function from serviceTwo named "respondToServiceOne."
+* When serviceOne recieves the response from serviceTwo, the api gateway returns the response to the browser.
 
 # Moleculer's Magic:
 If you've ever worked on a microservices project you'll know that "service discovery" and messaging between services are two of the most common challenges to getting started.
